@@ -48,7 +48,7 @@ if 'bio' not in st.session_state:
 # Home section
 if page == "Home":
     st.title("🧑🎓 Student Profile")
-    st.image("k.PNG", width=150, caption="Default image")
+    st.image("k.JPG", width=150, caption="Default image")
 
     # Display profile details
     st.subheader("📌 Personal Details")
