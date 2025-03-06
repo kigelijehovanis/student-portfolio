@@ -39,11 +39,11 @@ page = st.sidebar.radio("Go To:", ["Home", "Projects", "Skills", "Settings", "Co
 
 # Initialize session state variables if they don't exist
 if 'name' not in st.session_state:
-    st.session_state.name = "Kigeli JEHOVANIS"
+    st.session_state.name = "Kigeli Jehovanis"
 if 'location' not in st.session_state:
-    st.session_state.location = "Muhanga, Rwanda" 
+    st.session_state.location = "Musanze, Rwanda" 
 if 'bio' not in st.session_state:
-    st.session_state.bio = "I am a deeply passionate and visionary AI engineer, driven by innovation and a relentless pursuit of cutting-edge advancements in artificial intelligence. My dedication to pushing the boundaries of technology fuels my mission to create transformative solutions that shape the future"
+    st.session_state.bio = "I am a passionate AI engineer!"
 
 # Home section
 if page == "Home":
@@ -65,7 +65,7 @@ if page == "Home":
         st.session_state.bio = st.text_area("Short introduction about myself:", st.session_state.bio)
 
         # Save and update profile
-        if st.button("Save Changes"):
+        if st.button("Save Profile Changes"):
             st.success("✅ Profile updated successfully!")
     
     # Show 'Customize Profile' button
@@ -91,24 +91,24 @@ elif page == "Projects":
     
     project_data = {
         "Year 1 Project": {
-            "📊 Programming language": {
+            "📊 Data Analysis Project": {
                 "type": "Individual",
                 "description": ".",
-                "link": "https://github.com/kigelijehovanis/e-portofolio-v1"
+                "link": "https://github.com/kigelijehovanis /e-portofolio-v1"
             }
         },
         "Year 2 Project": {
             "🤖 AI Chatbot": {
                 "type": "Group",
-                "description": "My colleagues and I collaboratively developed a dynamic website where you can explore our profiles and discover the innovative projects we have created together.",
-                "link": "https://github.com/Jehovanissage/YEAR-II-C"
+                "description": "Together with my  collegues we developed a site where you can view our profile & what we have developed together.",
+                "link": "https://github.com/kigelijehovanis/YEAR-II-C"
             }
         },
         "Year 3 Project": {
             "🌐 ASA Ines Website": {
                 "type": "Group",
                 "description": "Designed and developed a website for ASA Ines RUHENGERI Adventist Church.",
-                "link": "https://github.com/sage-byiringi/asa-ines-website"
+                "link": "https://github.com/kigelijehovanis/asa-ines-website"
             }
         },
         "Dissertation": {
@@ -139,9 +139,9 @@ elif page == "Projects":
     # Student Testimonials
     st.subheader("🗣 Student Testimonials")
     testimonials = [
-        "Kigeli is an exceptional problem solver, demonstrating remarkable intellect and creativity! His final year project was a groundbreaking innovation that set new standards. – Dr. Theodore",
-        "Kigeli's unwavering dedication to AI is nothing short of inspiring! His relentless curiosity, commitment to innovation, and continuous thirst for knowledge make him a true trailblazer in the field. – Lecturer SHIMIRWA Aline Valerie",
-        "A phenomenal team mentor and an outstanding developer, Sage consistently leads with expertise and vision. His ability to guide and inspire, combined with his commitment to delivering top-tier, high-quality projects, sets him apart as a true innovator. – Teammate CKM"
+        "Kigeli is a brilliant problem solver! His final year project was truly innovative. – Dr. Theodore",
+        "Kigeli's dedication to AI is inspiring. He never stops learning! – Lecture. SHIMIRWA Aline Valerie",
+        "A great team mentor and developer. Sage delivers high-quality projects. – Teammate CKM"
     ]
     for testimonial in testimonials:
         st.write(f"🗨 {testimonial}")
@@ -207,8 +207,8 @@ elif page == "Contact":
 
     # Contact Information Links
     st.markdown("📧 Email:** kigelijehova@gmail.com")
-    st.markdown("[🔗 LinkedIn](https://www.linkedin.com/in/)")
-    st.markdown("[📂 GitHub](https://github.com)")
+    st.markdown("[🔗 LinkedIn](https://www.linkedin.com)")
+    st.markdown("[📂 GitHub](https://github.com/kigelijehovanis)")
     st.markdown("[📂 Instagram](https://www.instagram.com)")
 
 
@@ -245,7 +245,7 @@ if page == "Testimonials":
     
     # Display example testimonial
     st.subheader("💬Testimonial:")
-    st.write("Kigeli is a remarkable problem solver with an extraordinary ability to tackle challenges with precision and creativity! His final year project is a groundbreaking innovation that showcases his brilliance and forward-thinking approach.. – Mclement")
+    st.write("Kigeli is a brilliant problem solver! His final year project is truly innovative. – Mclement")
     
     st.markdown("---")
     
